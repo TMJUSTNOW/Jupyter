@@ -1,2 +1,2 @@
-model_checkpoint_path: "C:\\Users\\Nicol\\Desktop\\Kaggle\\Dogs_vs._Cats\\dogsvscats-0.01-n8_conv-basic.model"
-all_model_checkpoint_paths: "C:\\Users\\Nicol\\Desktop\\Kaggle\\Dogs_vs._Cats\\dogsvscats-0.01-n8_conv-basic.model"
+model_checkpoint_path: "C:\\Users\\Nicol\\Google Drive\\Learning\\Jupyter\\Dogs_vs._Cats\\DvC-0.001-3-6conv.model"
+all_model_checkpoint_paths: "C:\\Users\\Nicol\\Google Drive\\Learning\\Jupyter\\Dogs_vs._Cats\\DvC-0.001-3-6conv.model"
