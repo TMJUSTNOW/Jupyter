@@ -15,7 +15,7 @@ import tensorflow as tf
 # settings
 LEARNING_RATE = 1e-3
 # set to 20000 on local environment to get 0.99 accuracy
-TRAINING_ITERATIONS = 10000        
+TRAINING_ITERATIONS = 8000        
     
 DROPOUT = .5
 BATCH_SIZE = 50
