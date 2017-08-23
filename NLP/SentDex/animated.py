@@ -3,10 +3,14 @@ import matplotlib.animation as animation
 from matplotlib import style
 import time
 
+import os
+os.chdir(r"D:/My Computer/DATA/SentDex")
+
 style.use("ggplot")
 
 fig = plt.figure()
 ax1 = fig.add_subplot(1,1,1)
+
 
 def animate(i):
     pullData = open("twitter-out.txt","r").read()

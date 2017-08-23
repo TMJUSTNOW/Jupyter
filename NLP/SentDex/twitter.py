@@ -4,6 +4,9 @@ from tweepy.streaming import StreamListener
 import json
 import sentiment_mod as s
 
+import os
+os.chdir(r"D:/My Computer/DATA/SentDex")
+
 #consumer key, consumer secret, access token, access secret.
 ckey="gosegjymtSfQxeDKMA8FQlNog"
 csecret="v16xZCWqTyrOJsRxiTLs87iEB9mSQ3jJkJleTtNqhcM1K8JrA1"
@@ -19,8 +22,9 @@ class listener(StreamListener):
         all_data = json.loads(data)
 
         tweet = ascii(all_data["text"])
+        #tweet = all_data["text"]
         sentiment_value, confidence = s.sentiment(tweet)
-        print(tweet, sentiment_value, confidence)
+        print(tweet, sentiment_value, confidence)   
 
         if confidence*100 >= 80:
             output = open("twitter-out.txt","a")
@@ -37,4 +41,4 @@ auth = OAuthHandler(ckey, csecret)
 auth.set_access_token(atoken, asecret)
 
 twitterStream = Stream(auth, listener())
-twitterStream.filter(track=["Trump"])
+twitterStream.filter(track=["antifa"])

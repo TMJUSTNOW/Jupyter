@@ -10,7 +10,8 @@ from nltk.classify import ClassifierI
 from statistics import mode
 from nltk.tokenize import word_tokenize
 
-
+import os
+os.chdir(r"D:/My Computer/DATA/SentDex")
 
 class VoteClassifier(ClassifierI):
     def __init__(self, *classifiers):

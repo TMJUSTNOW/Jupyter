@@ -2,6 +2,7 @@
 
 import nltk
 import random
+import os
 #from nltk.corpus import movie_reviews
 from nltk.classify.scikitlearn import SklearnClassifier
 import pickle
@@ -34,6 +35,10 @@ class VoteClassifier(ClassifierI):
         choice_votes = votes.count(mode(votes))
         conf = choice_votes / len(votes)
         return conf
+import os
+os.chdir(r"D:/My Computer/DATA/SentDex")
+#train_df = pd.read_csv(open(os.path.join(path, "clean_train.csv"), "r")) 
+#test_df = pd.read_csv(open(os.path.join(path, "clean_test.csv"), "r"))
 
 documents_f = open("pickled_algos/documents.pickle", "rb")
 documents = pickle.load(documents_f)
