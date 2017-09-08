@@ -41,4 +41,4 @@ auth = OAuthHandler(ckey, csecret)
 auth.set_access_token(atoken, asecret)
 
 twitterStream = Stream(auth, listener())
-twitterStream.filter(track=["antifa"])
+twitterStream.filter(track=["altright", "Alt-Right"])
